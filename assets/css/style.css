@@ -1,30 +1,98 @@
 
 
 /* ------------------------------------ */
+
+@font-face {
+
+  font-family: MarketFont;
+  src: url(/assets/css/Market_Deco.ttf);
+
+}
+
+* {
+  font-family: 'MarketFont';
+}
+
+#title {
+  font-size: 5rem;
+  color: aliceblue;
+}
+
+/* top middle */
 #c0 {
   position: absolute;
   top: 0%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(#DF1612, #872A2A, #C4865D);
-  z-index: 300;
+  background: linear-gradient(#DF1612, #872A2A, #000000);
+  z-index: 500;
   box-shadow: 0px 20px 100px #F0D377;
 }
 
+/* top right */
 #c1 {
   background: linear-gradient( #570bb4, #0bcc79);
   box-shadow: 0px 20px 100px rgb(229, 255, 0);
   left: 100%;
   z-index: 0;
+  box-shadow: 0px 20px 100px #ffffff;
 }
 
-
+/* top left */
 #c2 {
   left: -100%;
   z-index: 0;
   background: linear-gradient( #59476f, #d1b07b);
   box-shadow: 0px 20px 100px rgb(255, 3, 3);
 }
+
+/* bottom middle */
+#c3 {
+  position: absolute;
+  top: 78%;
+  width: 110%;
+  height: 100%;
+  left: -5%;
+  z-index: 400;
+  background: linear-gradient(#DF1612, #872A2A, #000000);
+  box-shadow: 0px 20px 100px #F0D377;
+}
+
+/* bottom left */
+#c4 {
+  position: absolute;
+  top: 78%;
+  width: 110%;
+  height: 100%;
+  left: -120%;
+  z-index: 400;
+  background: linear-gradient(#DF1612, #872A2A, #000000);
+  box-shadow: 0px 20px 100px #F0D377;
+}
+
+/* bottom right */
+#c5 {
+  position: absolute;
+  top: 78%;
+  width: 110%;
+  height: 100%;
+  left: 110%;
+  z-index: 400;
+  background: linear-gradient(#DF1612, #872A2A, #000000);
+  box-shadow: 0px 20px 100px #ffffff;
+}
+
+
+/* #c6 {
+  position: absolute;
+  top: 67%;
+  width: 110%;
+  height: 110%;
+  left: -5%;
+  z-index: 300;
+  background: linear-gradient(#DF1612, #872A2A, #000000);
+  box-shadow: 0px 20px 100px #F0D377;
+} */
 
 .container {
   position: absolute;
@@ -46,34 +114,30 @@
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
-  background:#eee;
+  background: linear-gradient(to bottom, #000000 50%, #7e7e7e 100%)
 }
 
 #text0 {
   color: aliceblue;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 5rem;
   margin: 1rem;
 }
 
 #text1 {
   color: aliceblue;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 5rem;
   margin: 1rem;
 }
 
 #text2 {
   color: aliceblue;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 5rem;
   margin: 1rem;
 }
 
 .wrapper {
   position: absolute;
-  top: 10%;
+  top: 12%;
   left: 40%;
   width: 300px;
   height: 500px;
