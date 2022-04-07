@@ -113,19 +113,8 @@ a {
   background: linear-gradient(to bottom, #3e6a85 45%, #000000 100%)
 }
 
-#text0 {
-  color: aliceblue;
-  font-size: 5rem;
-  margin: 1rem;
-}
-
-#text1 {
-  color: aliceblue;
-  font-size: 5rem;
-  margin: 1rem;
-}
-
-#text2 {
+/* card font styles */
+#text0, #text1, #text2, #text3, #text4, #text5, #text6 {
   color: aliceblue;
   font-size: 5rem;
   margin: 1rem;
