@@ -1,4 +1,6 @@
-
+var current = {
+	category: 'top250'
+}
 
 
 

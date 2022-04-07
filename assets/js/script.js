@@ -1,7 +1,7 @@
 
 
 
-
+console.log(current);
 
 // title cards
 var topLeftCard = $("#c2"); 
@@ -21,8 +21,8 @@ var titleCardListener = function () {
         // takes the var that has the cards text value, then sends it to the second JS file 
 
         // then opens the second html page that is populated with the api information 
-        var monkey = window.location.assign.pathname
-        console.log(monkey);
+        current.category = 'boxOfficeHits';
+        window.location.href = './index2.html'
     });
 
     topMiddleCard.on("click", function () {
