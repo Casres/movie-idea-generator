@@ -4,38 +4,50 @@
 
 
 // title cards
-var topLeftCard = $("#text2"); 
-var topMiddleCard = $("#text0");
-var topRightCard = $("#text1");
-var bottomLeftCard = $("#text4");
-var bottomMiddleCard = $("#text3");
-var bottomRightCard = $("#text5");
+var topLeftCard = $("#c2"); 
+var topMiddleCard = $("#c0");
+var topRightCard = $("#c1"); 
+var bottomLeftCard = $("#c4");
+var bottomMiddleCard = $("#c3");
+var bottomRightCard = $("#c5");
 
 
 // a function that listens for what the user clicks on 
 var titleCardListener = function () {
+    
     topLeftCard.on("click", function () {
-        console.log("Top Left Card Clicked");
+        var topLeftCardTextValue = $(topLeftCard)[0].innerText;
+        console.log(topLeftCardTextValue);
+        // takes the var that has the cards text value, then sends it to the second JS file 
+
+        // then opens the second html page that is populated with the api information 
+        var monkey = window.location.assign.pathname
+        console.log(monkey);
     });
 
     topMiddleCard.on("click", function () {
-        console.log("Top Middle Card Clicked");
+        var topMiddleCardTextValue = $(topMiddleCard)[0].innerText;
+        console.log(topMiddleCardTextValue);
     });
 
     topRightCard.on("click", function () {
-        console.log("Top right Card Clicked");
+        var topRightCardTextValue = $(topRightCard)[0].innerText;
+        console.log(topRightCardTextValue);
     });
 
     bottomLeftCard.on("click", function () {
-        console.log("bottom Left Card Clicked");
+        var bottomLeftCardTextValue = $(bottomLeftCard)[0].innerText;
+        console.log(bottomLeftCardTextValue);
     });
 
     bottomMiddleCard.on("click", function () {
-        console.log("Bottom Middle Card");
+        var bottomMiddleCardTextValue = $(bottomMiddleCard)[0].innerText;
+        console.log(bottomMiddleCardTextValue);
     })
 
     bottomRightCard.on("click", function () {
-        console.log("bottom right Card Clicked");
+        var bottomRightTextValue = $(bottomRightCard)[0].innerText;
+        console.log(bottomRightTextValue);
     });
 
 };
