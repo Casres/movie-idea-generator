@@ -3,17 +3,17 @@
 /* ------------------------------------ */
 
 /* font(s) plug in */
-@font-face {
+/* @font-face {
 
   font-family: MarketFont;
   src: url(/assets/css/Market_Deco.ttf);
 
 
 
-}
+} */
 
 * {
-  font-family: 'MarketFont';
+  font-family: '';
 }
 
 a {
