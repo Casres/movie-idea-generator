@@ -25,18 +25,6 @@ if (category === 'Box Office Hits') {
 var parentMovieContainerEl = $("#movie-container");
 
 
-const options = { 
-	method: 'GET',
-	headers: {
-		'X-RapidAPI-Host': 'streaming-availability.p.rapidapi.com',
-		'X-RapidAPI-Key': '0360dc3017mshda93392b7cf7a9cp1789a3jsn2dc47382c53e'
-	}
-};
-
-fetch('https://streaming-availability.p.rapidapi.com/search/basic?country=us&service=netflix&type=movie&genre=18&page=1&output_language=en&language=en', options)
-	.then(response => response.json())
-	.then(response => console.log(response))
-	.catch(err => console.error(err));
 
 function boxOfficeHits (params) {
 
