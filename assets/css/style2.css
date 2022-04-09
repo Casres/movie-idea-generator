@@ -24,9 +24,12 @@
   transform: rotate(0deg) scale(1.57) translateZ(1rem);
   transition: .5s all ease;
   z-index: 100;
-  background: linear-gradient(to bottom, #000000 100%)
 }
 
+.extra-movie-info:hover {
+  z-index: 200;
+  background: linear-gradient(to bottom, #000000 100%)
+}
 
 .movie-name {
   color: #ffffff;

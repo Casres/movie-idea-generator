@@ -1,8 +1,6 @@
 
 
 
-console.log(current);
-
 // title cards
 var topLeftCard = $("#c2"); 
 var topMiddleCard = $("#c0");
@@ -21,33 +19,53 @@ var titleCardListener = function () {
         // takes the var that has the cards text value, then sends it to the second JS file 
 
         // then opens the second html page that is populated with the api information 
-        current.category = 'boxOfficeHits';
+        localStorage.setItem('category', 'top250')
         window.location.href = './index2.html'
     });
 
     topMiddleCard.on("click", function () {
         var topMiddleCardTextValue = $(topMiddleCard)[0].innerText;
         console.log(topMiddleCardTextValue);
+        // takes the var that has the cards text value, then sends it to the second JS file 
+        // then opens the second html page that is populated with the api information 
+        localStorage.setItem('category', 'top250')
+        // window.location.href = './index2.html'
     });
 
     topRightCard.on("click", function () {
         var topRightCardTextValue = $(topRightCard)[0].innerText;
         console.log(topRightCardTextValue);
+        // takes the var that has the cards text value, then sends it to the second JS file 
+        // then opens the second html page that is populated with the api information 
+        localStorage.setItem('category', 'top250')
+        // window.location.href = './index2.html'
     });
 
     bottomLeftCard.on("click", function () {
         var bottomLeftCardTextValue = $(bottomLeftCard)[0].innerText;
         console.log(bottomLeftCardTextValue);
+        // takes the var that has the cards text value, then sends it to the second JS file 
+        // then opens the second html page that is populated with the api information 
+        localStorage.setItem('category', 'top250')
+        // window.location.href = './index2.html'
     });
 
     bottomMiddleCard.on("click", function () {
         var bottomMiddleCardTextValue = $(bottomMiddleCard)[0].innerText;
         console.log(bottomMiddleCardTextValue);
+        // takes the var that has the cards text value, then sends it to the second JS file 
+        // then opens the second html page that is populated with the api information 
+        localStorage.setItem('category', 'top250')
+        // window.location.href = './index2.html'
     })
 
     bottomRightCard.on("click", function () {
         var bottomRightTextValue = $(bottomRightCard)[0].innerText;
         console.log(bottomRightTextValue);
+        // takes the var that has the cards text value, then sends it to the second JS file 
+        // then opens the second html page that is populated with the api information 
+        localStorage.setItem('category', 'top250')
+        // window.location.href = './index2.html'
     });
 
 };
