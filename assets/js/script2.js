@@ -29,40 +29,30 @@ var parentMovieContainerEl = $("#movie-container");
 function boxOfficeHits (params) {
 
 	// fetches API info
-	// fetch("https://imdb-api.com/en/API/BoxOfficeAllTime/k_x8psmgh3")
-	// .then(function (data) {
-	// 	data.json().then(function (info) {
-	// 	// variables thats values are the endpoints info that we need 
-	// 		// variable for the picture
-	// 	var movieImageAPI = info.items[0];
-	// 		// variable for the name 
-
-	// 		// variable for the title
-
-	// 		// variable for the length
-
- 
-	// 		console.log(movieImageAPI);
-	// 	})
-	// })
-
-	// a for loop that'll make the items to display the information and that the information will be plugged into 
-	for (let i = 0; i < category; i++) {
-		const apiElIteration = category[i];
+	fetch("https://imdb-api.com/en/API/BoxOfficeAllTime/k_x8psmgh3")
+	.then(function (data) {
+		data.json().then(function (info) {
+		// variables thats values are the endpoints info that we need 
+			// variable for the picture
+		for (var i = 0; i < info.items.length; i++) {
+			var currentMovie = info.items[i];
+			// create HTML element for currentMovie
+			var movieCard = $("<div></div>").addClass("movie-item card");
+			var cardBody = $("<div></div").addClass("card-body");
+			var movieName = $("<h5></h5").addClass("card-title").text(currentMovie.title);
+			var movieGross = $("<h4></h4").addClass("card-title").text(currentMovie.worldwideLifetimeGross);
 		
-		var movieCard = $("<div></div>").addClass("movie-item card");
-		var movieImage = $("<img></img").addClass("card-img-top")
-		.attr("alt", "...");
-		var cardBody = $("<div></div").addClass("card-body");
-		var movieName = $("<h5></h5").addClass("card-title")
-		.text("Pizza Hut");
-	
-		cardBody.append(movieName);
-		movieCard.append(movieImage);
-		movieCard.append(cardBody);
-		
-		movieCard.appendTo(parentMovieContainerEl);
-	}
+			cardBody.append(movieName);
+			cardBody.append(movieGross);
+			movieCard.append(cardBody);
+			
+			movieCard.appendTo(parentMovieContainerEl);
+		}
+			// variable for the name 
+
+			// variable for the length
+		})
+	})
 }
 
 function top250Movies (params) {
